@@ -12,9 +12,9 @@ class InputTodo extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     if (this.state.title.trim()) {
-      this.props.addTodoProps(this.state.title);
+      this.props.addTodoProps(this.state.title); // Make the edit
       this.setState({
-        title: "",
+        title: "",  // Clear the input fields
       });
     } else {
       alert("Please write item");
