@@ -63,3 +63,9 @@ body {
   outline: none;
   border: none;
 }
+
+.active-link {
+  color: orangered;
+  text-decoration: underline;
+}
+
