@@ -65,8 +65,6 @@ const TodoItem = (props) => {
   );
 };
 
-TodoItem.propTypes = {
-  addTodoProps: PropTypes.string.isRequired,
-};
+
 
 export default TodoItem;
