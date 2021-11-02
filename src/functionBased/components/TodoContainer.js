@@ -9,8 +9,6 @@ import NotMatch from '../pages/NotMatch';
 import Navbar from './Navbar';
 
 const TodoContainer = () => {
-  const [todos, setTodos] = useState(getInitialTodos());
-
   // useEffect(() => {
   //   console.log("test run");
 
@@ -32,6 +30,8 @@ const TodoContainer = () => {
     const savedTodos = JSON.parse(temp);
     return savedTodos || [];
   }
+
+  const [todos, setTodos] = useState(getInitialTodos());
 
   useEffect(() => {
     // storing todos items
