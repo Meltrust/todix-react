@@ -6,6 +6,10 @@
 
 Todix is focused on minimalism and ease of use.  There's no need to go into lots of menus: just set your tasks each day, complete them and profit.
 
+## Live demo
+
+[Visit todix!](https://Meltrust.github.io/todix-react/)
+
 
 ## Made with
 
