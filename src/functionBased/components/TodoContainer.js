@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
-import { Route, Switch } from "react-router-dom";
-import Header from "./Header";
-import InputTodo from "./InputTodo";
-import TodosList from "./TodosList";
-import { v4 as uuidv4 } from "uuid";
-import About from "../pages/About";
-import NotMatch from "../pages/NotMatch";
-import Navbar from "./Navbar";
+import React, { useState, useEffect } from 'react';
+import { Route, Switch } from 'react-router-dom';
+import { v4 as uuidv4 } from 'uuid';
+import Header from './Header';
+import InputTodo from './InputTodo';
+import TodosList from './TodosList';
+import About from '../pages/About';
+import NotMatch from '../pages/NotMatch';
+import Navbar from './Navbar';
 
 const TodoContainer = () => {
   const [todos, setTodos] = useState(getInitialTodos());
@@ -21,12 +21,14 @@ const TodoContainer = () => {
   // if (loadedTodos) {
   //   setTodos(loadedTodos);
   // }
-  // }, []);  This [] dependency argument could be "setTodos" so React watches the variable, but never changes so we omit it"
+  // }, []);  This [] dependency argument could be "setTodos" so
+  // React watches the variable, but never changes so we omit it"
 
-  // A more optimized way to set the initial mounting for the state on local storage.  Notice we need to call the function in the state variable at the beggining.
+  // A more optimized way to set the initial mounting for the state on local storage.
+  // Notice we need to call the function in the state variable at the beggining.
   function getInitialTodos() {
     // getting stored items
-    const temp = localStorage.getItem("todos");
+    const temp = localStorage.getItem('todos');
     const savedTodos = JSON.parse(temp);
     return savedTodos || [];
   }
@@ -34,35 +36,31 @@ const TodoContainer = () => {
   useEffect(() => {
     // storing todos items
     const temp = JSON.stringify(todos);
-    localStorage.setItem("todos", temp);
+    localStorage.setItem('todos', temp);
   }, [todos]); // React watches this variable and fires the function when it changes.
 
   const handleChange = (id) => {
-    setTodos((prevState) =>
-      prevState.map((todo) => {
-        if (todo.id === id) {
-          return {
-            ...todo,
-            completed: !todo.completed,
-          };
-        }
-        return todo;
-      })
-    );
+    setTodos((prevState) => prevState.map((todo) => {
+      if (todo.id === id) {
+        return {
+          ...todo,
+          completed: !todo.completed,
+        };
+      }
+      return todo;
+    }));
   };
 
   const delTodo = (id) => {
     setTodos([
-      ...todos.filter((todo) => {
-        return todo.id !== id;
-      }),
+      ...todos.filter((todo) => todo.id !== id),
     ]);
   };
 
   const addTodoItem = (title) => {
     const newTodo = {
       id: uuidv4(),
-      title: title,
+      title,
       completed: false,
     };
     setTodos([...todos, newTodo]);
@@ -75,7 +73,7 @@ const TodoContainer = () => {
           todo.title = updatedTitle;
         }
         return todo;
-      })
+      }),
     );
   };
 

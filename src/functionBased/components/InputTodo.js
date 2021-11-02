@@ -1,10 +1,12 @@
-import { FaPlusCircle } from "react-icons/fa";
-import React, { useState } from "react";
+import { FaPlusCircle } from 'react-icons/fa';
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
-// Using useState with multiple fields at the same time.  Optionally, we could have just declared multiple useState and multiple onChange.
+// Using useState with multiple fields at the same time.
+// Optionally, we could have just declared multiple useState and multiple onChange.
 const InputTodo = (props) => {
   const [inputText, setInputText] = useState({
-    title: "",
+    title: '',
   });
 
   const onChange = (e) => {
@@ -19,10 +21,10 @@ const InputTodo = (props) => {
     if (inputText.title.trim()) {
       props.addTodoProps(inputText.title);
       setInputText({
-        title: "",
+        title: '',
       });
     } else {
-      alert("Please write item");
+      alert('Please write item');
     }
   };
 
@@ -36,13 +38,16 @@ const InputTodo = (props) => {
         name="title"
         onChange={onChange}
       />
-      <button className="input-submit">
+      <button type="button" className="input-submit">
         <FaPlusCircle
-          style={{ color: "darkcyan", fontSize: "20px", marginTop: "2px" }}
+          style={{ color: 'darkcyan', fontSize: '20px', marginTop: '2px' }}
         />
       </button>
     </form>
   );
 };
 
+InputTodo.propTypes = {
+  addTodoProps: PropTypes.string.isRequired,
+};
 export default InputTodo;
