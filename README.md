@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Todix-REact
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> A minimalist todo-list app made with JavaScript and served with webpack 
 
-## Available Scripts
+![screenshot](./assets/img/app_screenshot.png)
 
-In the project directory, you can run:
+This app is focused in minimalism and ease of use.  There's no need to go into lots of menus: just set your tasks each day, complete them and profit.
 
-### `npm start`
+## Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+https://meltrust.github.io/todix/
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Made with
 
-### `npm run build`
+- Plain Javascript
+- Webpack
+- CSS3
+- HTML5
+- React.js
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Future Updates & Roadmap:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Drag & drop.
+- More general styling.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+To get a local copy up and running follow these simple example steps:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Under the repository name, click the Clone or download green button.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![clone](https://user-images.githubusercontent.com/53324035/73660989-4451aa80-4667-11ea-8a89-176f89d6548a.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+2. Copy the URL given by clicking the clipboard button
 
-## Learn More
+3. Open a terminal window in your local machine and change the current directory to the one you
+   want the clone directory to be made.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Type  git clone and the paste the URL you previusly copied to the clipboard
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. Change the current directory to the newly created folder
 
-### Code Splitting
+6. Open the index.html file on your browser. You can add and remove books which persist on browser reloads.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+7. In your terminal, `npm install` to install the dependencies.
 
-### Analyzing the Bundle Size
+8. Now run `npm start` and the app should appear on your browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+👤 **Miguel Tapia**
 
-### Advanced Configuration
+- Github: [@meltrust](https://github.com/meltrust)
+- Linkedin: [linkedin](https://www.linkedin.com/in/meltrust/)
+- Or talk to me directly at: original.mtapia@outlook.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Contributions, issues and feature requests are welcome!
 
-### `npm run build` fails to minify
+Feel free to check the [issues page](issues/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](lic.url) licensed.
+
