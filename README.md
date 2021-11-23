@@ -1,4 +1,4 @@
-# Todix-REact
+# Todix-React
 
 > A minimalist todo-list app made with JavaScript and served with webpack 
 
