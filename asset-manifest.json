@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/todix-react/static/css/main.17bda9f7.chunk.css",
-    "main.js": "/todix-react/static/js/main.fe5186ff.chunk.js",
-    "main.js.map": "/todix-react/static/js/main.fe5186ff.chunk.js.map",
+    "main.css": "/todix-react/static/css/main.74ae8d9e.chunk.css",
+    "main.js": "/todix-react/static/js/main.b6efa08b.chunk.js",
+    "main.js.map": "/todix-react/static/js/main.b6efa08b.chunk.js.map",
     "runtime-main.js": "/todix-react/static/js/runtime-main.2e9a9a1a.js",
     "runtime-main.js.map": "/todix-react/static/js/runtime-main.2e9a9a1a.js.map",
     "static/js/2.bd51aa45.chunk.js": "/todix-react/static/js/2.bd51aa45.chunk.js",
     "static/js/2.bd51aa45.chunk.js.map": "/todix-react/static/js/2.bd51aa45.chunk.js.map",
     "index.html": "/todix-react/index.html",
-    "static/css/main.17bda9f7.chunk.css.map": "/todix-react/static/css/main.17bda9f7.chunk.css.map",
+    "static/css/main.74ae8d9e.chunk.css.map": "/todix-react/static/css/main.74ae8d9e.chunk.css.map",
     "static/js/2.bd51aa45.chunk.js.LICENSE.txt": "/todix-react/static/js/2.bd51aa45.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2e9a9a1a.js",
     "static/js/2.bd51aa45.chunk.js",
-    "static/css/main.17bda9f7.chunk.css",
-    "static/js/main.fe5186ff.chunk.js"
+    "static/css/main.74ae8d9e.chunk.css",
+    "static/js/main.b6efa08b.chunk.js"
   ]
 }
