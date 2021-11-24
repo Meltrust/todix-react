@@ -25,7 +25,7 @@ class InputTodo extends Component {
         title: '', // Clear the input fields
       });
     } else {
-      alert('Please write item');
+      // alert('Please write item');
     }
   };
 

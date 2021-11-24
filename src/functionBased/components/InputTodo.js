@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 // Using useState with multiple fields at the same time.
 // Optionally, we could have just declared multiple useState and multiple onChange.
-const InputTodo = (props) => {
+const InputTodo = ({ addTodoProps }) => {
   const [inputText, setInputText] = useState({
     title: '',
   });
@@ -19,12 +19,12 @@ const InputTodo = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (inputText.title.trim()) {
-      props.addTodoProps(inputText.title);
+      addTodoProps(inputText.title);
       setInputText({
         title: '',
       });
     } else {
-      alert('Please write item');
+      // alert('Please write item');
     }
   };
 
