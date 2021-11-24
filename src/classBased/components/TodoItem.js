@@ -1,10 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './TodoItem.module.css';
 
 class TodoItem extends React.Component {
-  state = {
-    editing: false,
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      editing: false,
+    };
+  }
 
   handleEditing = () => {
     this.setState({
@@ -19,18 +23,22 @@ class TodoItem extends React.Component {
   };
 
   render() {
+    const { todo, handleChangeProps } = this.props;
     const completedStyle = {
       fontStyle: 'italic',
       color: '#595959',
       opacity: 0.4,
       textDecoration: 'line-through',
     };
-    const { completed, id, title } = this.props.todo;
+    const {
+      completed, id, title, deleteTodoProps, setUpdate,
+    } = todo;
 
     const viewMode = {};
     const editMode = {};
 
-    if (this.state.editing) {
+    const { editing } = this.state;
+    if (editing) {
       viewMode.display = 'none';
     } else {
       editMode.display = 'none';
@@ -42,10 +50,12 @@ class TodoItem extends React.Component {
             type="checkbox"
             className={styles.checkbox}
             checked={completed}
-            onChange={() => this.props.handleChangeProps(id)}
+            onChange={() => handleChangeProps(id)}
           />
-          <button onClick={() => this.props.deleteTodoProps(id)}>Delete</button>{' '}
-          <span style={completed ? completedStyle : null}>{title}</span>{' '}
+          <button type="button" onClick={() => deleteTodoProps(id)}>Delete</button>
+          {' '}
+          <span style={completed ? completedStyle : null}>{title}</span>
+          {' '}
         </div>
         <input
           type="text"
@@ -53,7 +63,7 @@ class TodoItem extends React.Component {
           className={styles.textInput}
           value={title}
           onChange={(e) => {
-            this.props.setUpdate(e.target.value, id);
+            setUpdate(e.target.value, id);
           }}
           onKeyDown={this.handleUpdatedDone}
         />
@@ -63,3 +73,9 @@ class TodoItem extends React.Component {
 }
 
 export default TodoItem;
+
+TodoItem.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
+  todo: PropTypes.any.isRequired,
+  handleChangeProps: PropTypes.func.isRequired,
+};
