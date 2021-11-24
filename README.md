@@ -1,32 +1,30 @@
 # Todix-React
 
-> A minimalist todo-list app made with JavaScript and served with webpack 
+> A minimalist todo-list app made with React 
 
-![screenshot](./assets/img/app_screenshot.png)
+![screenshot](./app_screenshot.png)
 
-This app is focused in minimalism and ease of use.  There's no need to go into lots of menus: just set your tasks each day, complete them and profit.
+Todix is focused on minimalism and ease of use.  There's no need to go into lots of menus: just set your tasks each day, complete them and profit.
 
-## Live Demo
+## Live demo
 
-https://meltrust.github.io/todix/
-
+[Visit todix!](https://Meltrust.github.io/todix-react/)
 
 
 ## Made with
 
-- Plain Javascript
+- Javascript
+- React
 - Webpack
+- React
 - CSS3
 - HTML5
-- React.js
 
-## Future Updates & Roadmap:
+## Future Updates & Roadmap
 
-- Drag & drop.
 - More general styling.
 
 ## Getting Started
-
 
 To get a local copy up and running follow these simple example steps:
 
@@ -34,21 +32,19 @@ To get a local copy up and running follow these simple example steps:
 
 ![clone](https://user-images.githubusercontent.com/53324035/73660989-4451aa80-4667-11ea-8a89-176f89d6548a.png)
 
-2. Copy the URL given by clicking the clipboard button
+2.Copy the URL given by clicking the clipboard button
 
-3. Open a terminal window in your local machine and change the current directory to the one you
-   want the clone directory to be made.
+3.Open a terminal window in your local machine and change the current directory to the one you want the clone directory to be made.
 
-4. Type  git clone and the paste the URL you previusly copied to the clipboard
+4.Type  git clone and the paste the URL you previusly copied to the clipboard
 
-5. Change the current directory to the newly created folder
+5.Change the current directory to the newly created folder
 
-6. Open the index.html file on your browser. You can add and remove books which persist on browser reloads.
+6.Open the index.html file on your browser. You can add and remove books which persist on browser reloads.
 
-7. In your terminal, `npm install` to install the dependencies.
+7.In your terminal, `npm install` to install the dependencies.
 
-8. Now run `npm start` and the app should appear on your browser.
-
+8.Now run `npm start` and the app should appear on your browser.
 
 ## Author
 
@@ -57,7 +53,6 @@ To get a local copy up and running follow these simple example steps:
 - Github: [@meltrust](https://github.com/meltrust)
 - Linkedin: [linkedin](https://www.linkedin.com/in/meltrust/)
 - Or talk to me directly at: original.mtapia@outlook.com
-
 
 ## 🤝 Contributing
 
